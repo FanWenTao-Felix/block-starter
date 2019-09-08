@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cs</groupId>
+        <artifactId>block-starter</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>block-starter-develop</artifactId>
+    <name>${project.artifactId}</name>
+    <version>${block.parent.version}</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <velocity.version>1.7</velocity.version>
+    </properties>
+
+    <dependencies>
+        <!--Block-->
+        <dependency>
+            <groupId>com.cs</groupId>
+            <artifactId>block-core-tool</artifactId>
+            <version>${block.parent.version}</version>
+        </dependency>
+        <!--Mybatis-Plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>${mybatis.plus.version}</version>
+        </dependency>
+        <!--Velocity-->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cs</groupId>
+        <artifactId>block-starter</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>block-starter-mybatis</artifactId>
+    <name>${project.artifactId}</name>
+    <version>${block.parent.version}</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <mybatis.spring.version>2.0.1</mybatis.spring.version>
+        <mybatis.version>3.5.1</mybatis.version>
+    </properties>
+
+    <dependencies>
+        <!--Block-->
+        <dependency>
+            <groupId>com.cs</groupId>
+            <artifactId>block-core-auto</artifactId>
+            <version>${block.parent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.cs</groupId>
+            <artifactId>block-core-tool</artifactId>
+            <version>${block.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cs</groupId>
+            <artifactId>block-core-secure</artifactId>
+            <version>${block.parent.version}</version>
+        </dependency>
+        <!--Mybatis-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>${mybatis.plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis.spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+    </dependencies>
+</project>
