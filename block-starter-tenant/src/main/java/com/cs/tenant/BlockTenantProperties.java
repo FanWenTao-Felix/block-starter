@@ -31,7 +31,7 @@ import java.util.List;
  */
 @Getter
 @Setter
-@ConfigurationProperties(prefix = "blade.tenant")
+@ConfigurationProperties(prefix = "block.tenant")
 public class BlockTenantProperties {
 
 	/**

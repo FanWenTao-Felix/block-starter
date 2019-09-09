@@ -155,6 +155,7 @@
 
     <!--配置远程仓库地址
         如果没指定,默认会到http://repo1.maven.org/maven2中央仓库去请求插件和依赖包。
+    -->
     <repositories>
         <repository>
             <id>nexus-releases</id>
@@ -180,7 +181,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-    -->
+
     <profiles>
         <profile>
             <id>release</id>
